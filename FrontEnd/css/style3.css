@@ -1,5 +1,5 @@
 .container {
-  position: relative;
+  position: absolute;
   text-align: center;
   color: white;
 }
@@ -26,7 +26,7 @@
 .typewriter h1 {
   font-family: "Monospace",Lucida Console;
   color: white;
-  /*overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /* overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid white; 
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
