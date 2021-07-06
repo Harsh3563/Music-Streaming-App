@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Monospace",Lucida Console
+}
+
+.typewriter h1 {
+  font-family: "Monospace",Lucida Console;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; 
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-left: 5%;
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing .75s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+a:active {
+  color: gray;
+}
+a:link {
+  color: gray;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: gray;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: gray;
+}
+
+.lofi {
+  position: absolute;
+  top: 57px;
+  left: 37px;
+  color: white;
+  font-family: "Monospace",Lucida Console
+
+}
+.rap {
+  position: absolute;
+  top: 97px;
+  left: 37px;
+  font-family: "Monospace",Lucida Console
+
+}
+.retro {
+  position: absolute;
+  top: 137px;
+  left: 31px;
+  font-family: "Monospace",Lucida Console
+
+}
+.jazz {
+  position: absolute;
+  top: 177px;
+  left: 37px;
+  font-family: "Monospace",Lucida Console
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: transparent; }
+}
+
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-family: "Monospace",Lucida Console
+}
+
+@keyframes blink {50% { color: transparent }}
+.loader__dot { animation: 1s blink infinite }
+.loader__dot:nth-child(2) { animation-delay: 250ms }
+.loader__dot:nth-child(3) { animation-delay: 500ms }
